@@ -6,7 +6,7 @@ const refs = {
 refs.textInput.addEventListener('input', onInputAdd);
 
 function onInputAdd(event) {
-    console.log(event)
+ 
     refs.textOutput.textContent = event.currentTarget.value;
 }
 
