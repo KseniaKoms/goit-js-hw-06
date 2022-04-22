@@ -1,0 +1,14 @@
+const inputRef = document.querySelector('input[data-length="6"]');
+
+inputRef.addEventListener('blur', onInputValueCheck);
+
+console.log(inputRef.value.length)
+
+function onInputValueCheck() {
+    if (inputRef.value.length === 6) {
+        inputRef.classList.add('valid')
+    } else 
+      inputRef.classList.add('invalid');
+       
+}
+
