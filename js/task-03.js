@@ -18,7 +18,7 @@ listEl.style.display = "flex";
 listEl.style.justifyContent = "space-between";
 listEl.style.listStyle = "none";
 const galleryEl = images
-  .map(image => `<li><img src="${image.url}" alt="${image.alt}" width = "320" height = "200"</li>`)
+  .map(image => `<li><img src="${image.url}" alt="${image.alt}" width = "320" height = "200"></li>`)
   .join("");
 
 listEl.insertAdjacentHTML("afterbegin", galleryEl);
